@@ -1,0 +1,33 @@
+
+.my-nav-menu:hover{
+    color: #FF6900 !important;
+}
+
+.no-caret .dropdown-toggle::after {
+  display: none !important;
+}
+
+.navbar-nav .dropdown-menu.show {
+  position: static;
+  background-color: #ffecde;
+  transition: all 0.3s ease;
+  padding: 25px;
+  border-radius: 16px;
+  border: none;
+}
+.navbar-nav .dropdown-menu .dropdown-item {
+  border-bottom: 1px solid white;
+  padding: 10px 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.navbar-nav .dropdown-menu .dropdown-item:last-child{
+    border-bottom: none;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  color: #FF6900 !important;
+  background-color: #ffecde !important;
+}
