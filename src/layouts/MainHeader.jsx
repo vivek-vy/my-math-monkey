@@ -4,9 +4,9 @@ import { NavBar } from '../components/NavBar'
 
 export default function MainHeader() {
   return (
-    <div>
+    <header>
         <TopBar/>
         <NavBar/>
-    </div>
+    </header>
   )
 }

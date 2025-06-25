@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-import fb from "../assets/images/topbar_social-icons/facebook1.png";
-import insta from "../assets/images/topbar_social-icons/instagram1.png";
-import youtube from "../assets/images/topbar_social-icons/youtube1.png";
+import fb from "../assets/topbar_social-icons/facebook1.png";
+import insta from "../assets/topbar_social-icons/instagram1.png";
+import youtube from "../assets/topbar_social-icons/youtube1.png";
 
 export default function TopBar() {
-
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
@@ -19,13 +18,25 @@ export default function TopBar() {
 
   return (
     <div
-      className="d-flex justify-content-between px-3  px-sm-5  py-2 py-sm-4"
-      style={{ backgroundColor: "#333333", color: "#FFFFFF",fontSize:isMobile?"12px":"18px" }}
+      className="d-flex justify-content-between px-3  px-sm-5  py-2 py-sm-3"
+      style={{
+        backgroundColor: "#333333",
+        color: "#FFFFFF",
+        fontSize: isMobile ? "12px" : "18px",
+      }}
     >
-      <div className="d-flex flex-column flex-sm-row gap-sm-4">
-        <div className="e-mail " >
+      <div
+        className="d-flex align-items-sm-center flex-column flex-sm-row gap-sm-4 text-sm"
+        style={{ fontSize: "14px" }}
+      >
+        <div className="e-mail">
           <span>
-            <svg width={isMobile ?"15px" :"28"} height="28" viewBox="0 0 28 28" fill="none">
+            <svg
+              width={isMobile ? "15px" : "28"}
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+            >
               <rect width="28" height="28" fill="url(#pattern0_387_375)" />
               <defs>
                 <pattern
@@ -49,17 +60,16 @@ export default function TopBar() {
               </defs>
             </svg>
           </span>
-          <span className="ms-sm-2 ms-1" > enquiry@mathmonkey.asia</span>
+          <span className="ms-2">enquiry@mathmonkey.asia</span>
         </div>
-        <div className="contact">
+        <div className="contact" style={{ display: "block" }}>
           <span>
             <svg
-              width={isMobile ?"15px" :"28"}
+              width={isMobile ? "15px" : "28"}
               height="22"
               viewBox="0 0 22 22"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              
             >
               <rect width="22" height="22" fill="url(#pattern0_387_376)" />
               <defs>
@@ -89,19 +99,33 @@ export default function TopBar() {
       </div>
       <div className="social-media d-flex flex-column flex-sm-row gap-2 gap-sm-3 ">
         <div>
-          <span>Follow Us On :</span>
+          <span className="contents " style={{ fontSize: "14px" }}>
+            Follow Us On :
+          </span>
         </div>
         <div className="social-icon d-flex gap-2 ">
           <span>
-            <img src={fb} alt="fb" style={{width:isMobile?"18px":"100%"}} />
+            <img
+              src={fb}
+              alt="fb"
+              style={{ width: isMobile ? "18px" : "100%" }}
+            />
           </span>
           <span>
             {" "}
-            <img src={insta} alt="insta" style={{width:isMobile?"18px":"100%"}}   />{" "}
+            <img
+              src={insta}
+              alt="insta"
+              style={{ width: isMobile ? "18px" : "100%" }}
+            />{" "}
           </span>
           <span>
             {" "}
-            <img src={youtube} alt="youtube" style={{width:isMobile?"18px":"100%"}}  />{" "}
+            <img
+              src={youtube}
+              alt="youtube"
+              style={{ width: isMobile ? "18px" : "100%" }}
+            />{" "}
           </span>
         </div>
       </div>

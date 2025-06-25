@@ -1,10 +1,12 @@
-import React from 'react'
-import { FooterBar } from '../components/FooterBar'
+import React from "react";
+import { FooterBar } from "../components/FooterBar";
+import { FooterContent } from "../components/FooterContent";
 
 export default function MainFooter() {
   return (
-    <div>
-        <FooterBar/>
-    </div>
-  )
+    <footer >
+      <FooterContent />
+      <FooterBar />
+    </footer>
+  );
 }

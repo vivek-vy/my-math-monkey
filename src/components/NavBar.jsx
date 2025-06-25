@@ -1,10 +1,11 @@
 import React from "react";
 import { Button, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
-import logo from "../assets/images/header-images/math-monkey-logo.png";
+import logo from "../assets/header-images/math-monkey-logo.png";
 import { NavLink } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
 import "../styles/navBar.css";
+import { CommonButton } from "./CommonButton";
 
 export const NavBar = () => {
   return (
@@ -122,13 +123,7 @@ export const NavBar = () => {
             <NavDropdown.Item href="#action/3.1">FAQ</NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <Button
-          type="submit"
-          className="p-2 border-0 rounded-0 fs-5 mt-2 mt-sm-0"
-          style={{ backgroundColor: "#FF6900", width: "180px" }}
-        >
-          Call Us
-        </Button>
+        <CommonButton btnText={"Call Us"}/>
       </Navbar.Collapse>
     </Navbar>
   );

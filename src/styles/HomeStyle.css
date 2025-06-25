@@ -1,0 +1,110 @@
+.carousel-slide {
+  background-size: cover;
+  background-position: center;
+  height: 655px;
+  position: relative;
+  width: 100%;
+}
+
+.custom-caption {
+  position: absolute;
+  top: 15% !important;
+  left: 8% !important;
+  text-align: left !important;
+  max-width: 40%;
+}
+
+@media (max-width: 600px) {
+  .slider-img {
+    height: 100% !important;
+    object-fit: contain;
+  }
+  .carousel-slide {
+    /* height: 100px !important; */
+    height: 200px;
+    object-fit: cover;
+  }
+  /* math section */
+
+  .math-love-section {
+    height: 100% !important;
+    padding: 4rem 10px;
+  }
+  .math-heading {
+    font-size: x-large !important;
+  }
+
+  .hanging-monkey {
+    margin-top: -40px !important;
+   margin-left: -50px;
+width: 100%;
+rotate: 10deg;
+}
+
+/* factors  */
+
+
+.factor-heading,.factors-description{
+ font-size: large !important;
+ padding:0 50px;
+}
+
+
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+}
+
+.carousel-indicators .active {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #dbdbdb !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+  border: none !important;
+}
+
+.bottom-wave {
+  position: absolute;
+  bottom: 0;
+}
+
+.hanging-monkey {
+  margin-top: -18px;
+  animation: hangingMonkey 0.8s ease-in-out infinite;
+  rotate: -8deg;
+}
+
+@keyframes hangingMonkey {
+  0% {
+    transform: translatey(3px);
+  }
+  50% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(3px);
+  }
+}
+
+
+/* pillars  */
+
+.pillar-box{
+padding: 20px 30px;
+transition: transform ease-in-out 0.3s;
+border-radius: 10px;
+
+}
+.pillar-box:hover{
+background-color:#F6EFE4;
+box-shadow: 0px 0px 6.644px 0px rgba(0, 0, 0, 0.1);
+transform: translateY(-40px);
+}
