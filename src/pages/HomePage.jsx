@@ -16,6 +16,9 @@ import mailImg from "../assets/home-section/adventure/mailtele.png";
 import vect1 from "../assets/home-section/adventure/Vector(1).png";
 import planImg from "../assets/home-section/adventure/monkeywithplan.png";
 import bus from "../assets/home-section/slider-img/bus1.png";
+
+// adventure
+
 import f2 from "../assets/home-section/adventure/f2.png";
 
 import arrow from "../assets/home-section/math-section/Vector-arrow.png";
@@ -41,8 +44,21 @@ import factorsbg from "../assets/home-section/factors/5-factors.png";
 
 import brainThinkBg from "../assets/home-section/brain-thnin-section4/brain-bg.png";
 import brain from "../assets/home-section/brain-thnin-section4/brain.png";
-import bulb from "../assets/home-section/brain-thnin-section4/buld.png";
+import bulb from "../assets/home-section/brain-thnin-section4/bulb.png";
 import nextArrow from "../assets/home-section/brain-thnin-section4/arrownext.png";
+import brainsectionimg from "../assets/home-section/brain-thnin-section4/brain-section-kids.png";
+
+//  math brain section
+
+import mathbrainbg from "../assets/home-section/math-brain-section/math-brain-bg.png";
+import brainImg2 from "../assets/home-section/math-brain-section/math-brain-img12.png";
+
+// vedic math section
+
+import sunShape from "../assets/home-section/vedic-math-section/shape-sun.png";
+import { ChildGrowthCarousel } from "../components/small-components/ChildGrowthCarousel";
+import monkey22 from "../assets/home-section/vedic-math-section/monkeyh2.png";
+import arrowmath from "../assets/home-section/vedic-math-section/arrowff2.png";
 
 export default function HomePage() {
   const contents = [
@@ -104,12 +120,7 @@ export default function HomePage() {
       <section className=" slider-section position-relative">
         <SliderHome contents={contents} />
         <div className="bottom-wave w-100">
-          {" "}
-          <img
-            src={wave}
-            alt=""
-            style={{ width: "100%", height: "100%" }}
-          />{" "}
+          <img src={wave} alt="" style={{ width: "100%", height: "100%" }} />{" "}
         </div>
       </section>
 
@@ -199,11 +210,11 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="position-absolute left-0" style={{ bottom: "0px" }}>
+        <div className=" arrow-monkey bottom-0 left-0">
           <img src={f2} alt="" width={"100%"} />
         </div>
         <div
-          className="position-absolute "
+          className="position-absolute d-none d-sm-block"
           style={{ bottom: "100px", right: "15%" }}
         >
           <img src={bus} alt="" width={"100%"} />
@@ -275,7 +286,7 @@ export default function HomePage() {
           <img className="hanging-monkey" src={monkey} alt="monkey" />
 
           <div className="description col-12 col-sm-6 mt-sm-5 pt-sm-5 fw-medium text-center">
-            <p className="" style={{ fontSize: "30px" }}>
+            <p className="fw-medium" style={{ fontSize: "30px" }}>
               At Math Monkey, our BrainThink instructors integrate the 4 Pillars
               (Play, Learn, Think, Math) to create an engaging and dynamic
               learning experience.
@@ -283,16 +294,21 @@ export default function HomePage() {
           </div>
           <img src={aFrame} alt="frame" />
         </div>
-        <div className="pillars d-flex flex-column flex-sm-row justify-content-evenly align-items-center gap-5 ">
-          <div style={{ marginTop: "10%" }}>
-            <OurPillars
-              img={playImg}
-              heading={"Play"}
-              description={
-                " At Math Monkey, our BrainThink instructors integrate the 4 Pillars (Play, Learn, Think, Math) to create an engaging and dynamic learning experience."
-              }
+        <div className="pillars flex-wrap  zigzag-connection-wrapper position-relative d-flex flex-column flex-lg-row justify-content-evenly align-items-center gap-5 ">
+          <svg
+            className="zigzag-line d-none d-lg-block"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 894 150"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0 101L284 8L591 135.5L892 0.5"
+              stroke="#FF6900"
+              strokeOpacity="0.37"
+              strokeDasharray="12 12"
+              fill="none"
             />
-          </div>
+          </svg>
 
           <div>
             <OurPillars
@@ -304,16 +320,27 @@ export default function HomePage() {
             />
           </div>
 
-          <div style={{ marginTop: "10%" }}>
+          <div style={{ marginTop: "-10%" }}>
             <OurPillars
-              img={playImg}
-              heading={"Play"}
+              img={learnImg}
+              heading={" Learn"}
               description={
-                " At Math Monkey, our BrainThink instructors integrate the 4 Pillars (Play, Learn, Think, Math) to create an engaging and dynamic learning experience."
+                " Children explore concepts through hands-on activities, reinforcing understanding and strengthening their MathBrain."
               }
             />
           </div>
+
           <div>
+            <OurPillars
+              img={thinkImg}
+              heading={"Think"}
+              description={
+                "Children explore concepts through hands-on activities, reinforcing understanding and strengthening their MathBrain."
+              }
+            />
+          </div>
+
+          <div style={{ marginTop: "-10%" }}>
             <OurPillars
               img={mathImg}
               heading={"Math"}
@@ -358,36 +385,173 @@ export default function HomePage() {
         className="text-center"
         style={{
           backgroundImage: `url(${brainThinkBg})`,
-          minHeight: "1000px",
           backgroundSize: "100% 100%",
         }}
       >
-        <div className="" >
+        <div className="">
           <div>
-            <h4>BrainThink Learning</h4>
+            <h4 className="fw-bold mt-5" style={{ fontSize: "50px" }}>
+              BrainThink Learning
+            </h4>
           </div>
-          <div>
-            <strong>Children</strong>
+          <div className="d-flex flex-column flex-sm-row  justify-content-evenly gap-5 gap-sm-0 px-sm-5 mt-5 align-items-center">
             <div>
-              {" "}
-              <img src={brain} alt="brain" />{" "}
+              <strong className="fs-4">Children</strong>
+              <div>
+                <img src={brain} alt="brain" />{" "}
+              </div>
+              <p className="fs-5 fw-bold" style={{ marginTop: "-50px" }}>
+                when triggered by <br />
+                <span className="fs-2" style={{ color: "#33A1FF" }}>
+                  {" "}
+                  CURIOSITY
+                </span>
+              </p>
             </div>
-            <p>
-              when triggered by <br />
-              <span> CURIOSITY</span>
+            <div className="next-arrow">
+              <img src={nextArrow} alt="" />
+            </div>
+            <div>
+              <strong className="fs-5">
+                Then they <br />
+                <span className="fs-3">LEARN</span>
+              </strong>
+              <div>
+                {" "}
+                <img src={bulb} alt="brain" />{" "}
+              </div>
+              <p className="fs-5 fw-bold">
+                by understanding <br />
+                <span className="fs-3" style={{ color: "#5DA33C" }}>
+                  {" "}
+                  WHY
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 d-flex flex-column align-content-center justify-content-center flex-sm-row gap-5 py-5 text-start">
+          <div className=" text-end position-relative me-sm-5">
+            <img src={brainsectionimg} alt="kids" width={"100%"} />
+          </div>
+
+          <div
+            className="adventure-contents d-flex gap-4 flex-column py-3 "
+            style={{ maxWidth: "700px" }}
+          >
+            <div className="heading-description">
+              <h5
+                className="fw-normal"
+                style={{ color: "#33A1FF", fontFamily: "Yusei Magic" }}
+              >
+                Why Choose Play to Learn?
+              </h5>
+              <h2 className="fw-bold fs-1">
+                Did you know that children who interact in diverse play are more
+                adaptable in their learning?
+              </h2>
+              <p className="fw-medium fs-6">
+                Playtime is crucial for brain development! Research shows that
+                kids who enjoy regular, short bursts of free play are more
+                focused during academic tasks. By integrating play into
+                learning, we enhance cognitive skills and foster a lifelong love
+                for education. Embrace the power of play for a brighter learning
+                journey!
+              </p>
+            </div>
+            <hr />
+            <div className="d-flex flex-column flex-sm-row gap-5 align-items-center">
+              <div>
+                <CommonButton btnText={"View more"} />
+              </div>
+              <div className="d-flex gap-3">
+                <span>
+                  <img
+                    className="border  p-2 rounded-circle"
+                    src={mailImg}
+                    alt="mail"
+                  />
+                </span>
+                <div>
+                  <strong className="fw-bold">Have Questions? Email Us</strong>
+                  <p className="text-decoration-underline fw-medium">
+                    funmath@mathmonkey.asia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* math brain section  */}
+
+      <section
+        className="math-brain d-flex flex-column flex-sm-row justify-content-center align-items-center "
+        style={{
+          backgroundImage: `url(${mathbrainbg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          minHeight: "540px",
+          gap: "5rem",
+        }}
+      >
+        <div className="d-flex flex-column gap-3" style={{ maxWidth: "700px" }}>
+          <h4 className="fw-bold" style={{ fontSize: "50px" }}>
+            What is MathBrain ?
+          </h4>
+          <div>
+            <p className="fw-medium fs-6">
+              We cultivate negotiation skills with   "Save, Spend, Earn"
+              stickers, encourage strategic thinking with interactive play, and
+                 help children think outside the box with early exposure to
+              Vedic Math.
+            </p>
+            <p className="fw-medium fs-6">
+              {" "}
+              Join us and watch your child thrive in math with a whole new
+              perspective!
+            </p>
+          </div>
+          <CommonButton btnText={"View more"} />
+        </div>
+        <div>
+          <img src={brainImg2} alt="" width={"100%"} />
+        </div>
+      </section>
+
+      {/* vedic math section  */}
+
+      <section className="p-5 ">
+        <div  >
+          <img src={sunShape} alt="" />
+        </div>
+
+        <div className="d-flex flex-column flex-sm-row justify-content-between align-items-center  px-sm-5 ">
+          <div className="ps-sm-5" style={{ maxWidth: "1000px" }}>
+            <h4 className="heading-h4 fw-bold  "> What is Vedic Math?</h4>
+            <p className="fw-medium">
+              Vedic Math is an ancient arithmetic system designed to enhance
+              thought processing through simple and efficient techniques. At
+              Math Monkey, we integrate Vedic Math into our 4 Pillars (Play,
+              Learn, Think, Math) to help children develop a deeper
+              understanding of numbers while making learning engaging and
+              enjoyable.
             </p>
           </div>
           <div>
-            <strong>Then they LEARN</strong>
-            <div>
-              {" "}
-              <img src={bulb} alt="brain" />{" "}
-            </div>
-            <p>
-              by understanding <br />
-              <span> WHY</span>
-            </p>
+            <CommonButton btnText={"View More"} />
           </div>
+        </div>
+        <div className="child-growth-carousel text-center py-5 ">
+          <ChildGrowthCarousel />
+        </div>
+        <div className="text-end mt-5 hanging-monkey-2 ">
+          <img src={monkey22} alt="" />
+        </div>
+        <div className="" style={{}} >
+          <img src={arrowmath} alt="" />
         </div>
       </section>
     </div>

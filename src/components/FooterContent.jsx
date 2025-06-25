@@ -23,7 +23,7 @@ export const FooterContent = () => {
         <img className="w-100" src={waveimg} alt="wave" />
       </div>
 
-      <div className="d-flex px-4 px-sm-5  flex-column flex-sm-row gap-5 gap-sm-0   justify-content-between ">
+      <div className="d-flex px-4 px-sm-5  flex-column align-items-center flex-lg-row gap-5 gap-sm-0   justify-content-between ">
         <div className="logo mx-sm-5 mt-sm-5 " style={{ width: "250px" }}>
           <span>
             <img

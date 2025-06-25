@@ -9,7 +9,6 @@ import balloon from "../assets/home-section/slider-img/hot-air-balloon1.png";
 import doll from "../assets/home-section/slider-img/doll1.png";
 import bus from "../assets/home-section/slider-img/bus1.png";
 
-
 export const SliderHome = ({ contents }) => {
   return (
     <Carousel>
@@ -27,43 +26,27 @@ export const SliderHome = ({ contents }) => {
                 <div>
                   <div className="d-flex justify-content-between">
                     <div>
-                      <img src={balloon} alt="balloon" />
+                      <img
+                        className="balloon-img"
+                        src={balloon}
+                        alt="balloon"
+                      />
                     </div>
-                    <div style={{ marginTop: "-50px",marginRight:"20%" }}>
+                    <div className="doll-img">
                       <img src={doll} alt="doll" />
                     </div>
                   </div>
-                  <div className="px-5 fw-normal ">
-                    <p className="m-0"
-                      style={{
-                        color: "#33A1FF",
-                        fontSize: "24px",
-                        fontFamily: "Yusei Magic",
-                      }}
-                    >
-                      {slide.heading}
-                    </p>
-                    <span className="m-0"
-                      style={{
-                        color: "#333333",
-                        fontSize: "70px",
-                        fontWeight: "700 ",
-                        lineHeight:"normal"
-                      }}
-                    >
+                  <div className="px-sm-5 ps-3 fw-normal ">
+                    <p className="m-0 slide-heading">{slide.heading}</p>
+                    <span className="m-0 slider-subheading">
                       {slide.subheading}
                     </span>
-                    <p 
-                      style={{
-                        color: "#F62023",
-                        fontSize: "18px",
-                        fontWeight: "700",
-                        
-                      }}
-                    >
+                    <p className="slider-description fw-bold">
                       {slide.description}
                     </p>
-                    <div className="mt-4"><CommonButton btnText={slide.btnText} /></div>
+                    <div className="mt-4">
+                      <CommonButton btnText={slide.btnText} />
+                    </div>
                   </div>
                   <div className="text-end" style={{ marginRight: "25%" }}>
                     <img src={bus} alt="bus" />
@@ -74,7 +57,6 @@ export const SliderHome = ({ contents }) => {
           </Carousel.Item>
         );
       })}
-    
     </Carousel>
   );
 };

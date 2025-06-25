@@ -1,9 +1,11 @@
 .carousel-slide {
   background-size: cover;
-  background-position: center;
-  height: 655px;
+  min-height: 80vh;
   position: relative;
   width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .custom-caption {
@@ -14,16 +16,65 @@
   max-width: 40%;
 }
 
+.doll-img {
+  margin-top: -50px;
+  margin-right: 20%;
+}
+.slide-heading {
+  color: #33a1ff;
+  font-size: 24px;
+  font-family: "Yusei Magic";
+}
+.slider-subheading {
+  color: #333333;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: normal;
+}
+.slider-description {
+  color: #f62023;
+  font-size: 18px;
+  font-weight: 700;
+}
+.arrow-monkey{
+  position: absolute;
+  
+}
+
 @media (max-width: 600px) {
   .slider-img {
     height: 100% !important;
-    object-fit: contain;
+    /* object-fit: contain; */
   }
   .carousel-slide {
-    /* height: 100px !important; */
-    height: 200px;
-    object-fit: cover;
+    min-height: 30vh;
   }
+
+  .doll-img {
+    margin-top: 0px;
+  }
+  .doll-img img,
+  .balloon-img {
+    width: 40px;
+    margin-top: -40px;
+  }
+  .slide-heading {
+    font-size: 12px;
+  }
+  .slider-subheading {
+    font-size: 15px;
+  }
+  .slider-description {
+    font-size: 8px;
+  }
+
+  .arrow-monkey {
+     
+      position:  static !important;
+      margin-top: -100px;
+    
+  }
+
   /* math section */
 
   .math-love-section {
@@ -35,21 +86,23 @@
   }
 
   .hanging-monkey {
-    margin-top: -40px !important;
-   margin-left: -50px;
-width: 100%;
-rotate: 10deg;
-}
+    margin-left: -58px;
+    width: 100%;
+    rotate: 10deg;
+  }
 
-/* factors  */
+  /* factors  */
 
+  .factor-heading,
+  .factors-description {
+    font-size: large !important;
+    padding: 0 50px;
+  }
+  /* ---- brain section ----- */
 
-.factor-heading,.factors-description{
- font-size: large !important;
- padding:0 50px;
-}
-
-
+  .next-arrow{
+    rotate: 90deg;
+  }
 
 }
 
@@ -94,17 +147,79 @@ rotate: 10deg;
   }
 }
 
-
 /* pillars  */
 
-.pillar-box{
-padding: 20px 30px;
-transition: transform ease-in-out 0.3s;
-border-radius: 10px;
+.pillar-box {
+  padding: 20px 30px;
+  transition: transform ease-in-out 0.5s;
+  border-radius: 10px;
+}
+.pillar-box:hover {
+  background-color: #f6efe4;
+  box-shadow: 0px 0px 6.644px 0px rgba(0, 0, 0, 0.1);
+  transform: translateY(-40px);
+}
+
+/* zig-zag cards */
+
+.zigzag-connection-wrapper {
+  position: relative;
+  padding: 100px 20px 20px 20px;
+}
+
+.zigzag-line {
+  position: absolute;
+  top:15%;
+  left: 16%;
+  height: 150px;
+  width: 70%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+/* math brain section  */
+
+
+.math-brain{
+  padding: 8rem 1.5rem ;
+}
+.heading-h4{
+  font-size: 50px;
+}
+@media (max-width:600px) {
+  .math-brain{
+  padding: 5rem 1.5rem ;
+}
+.heading-h4{
+  font-size: xx-large;
+}
+  
+}
+
+
+
+/* carousel  */
+
+.slick-dots li button:before{
+font-size: 20px !important;
+margin: 50px 0;
 
 }
-.pillar-box:hover{
-background-color:#F6EFE4;
-box-shadow: 0px 0px 6.644px 0px rgba(0, 0, 0, 0.1);
-transform: translateY(-40px);
+
+.hanging-monkey-2{
+
+  animation: hanging 1s ease-in-out infinite;
+}
+
+@keyframes hanging {
+  0%{
+    transform: rotateZ(0.5deg) ;
+  }
+  50%{
+ transform:  rotateZ(0deg);
+  }
+   100%{
+   transform: rotateZ(0.5deg) ;
+  }
 }
