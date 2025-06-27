@@ -4,7 +4,7 @@ import { FooterContent } from "../components/FooterContent";
 
 export default function MainFooter() {
   return (
-    <footer >
+    <footer>
       <FooterContent />
       <FooterBar />
     </footer>

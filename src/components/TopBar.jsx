@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import fb from "../assets/topbar_social-icons/facebook1.png";
 import insta from "../assets/topbar_social-icons/instagram1.png";
@@ -27,7 +27,7 @@ export default function TopBar() {
     >
       <div
         className="d-flex align-items-sm-center flex-column flex-sm-row gap-sm-4 text-sm"
-        style={{ fontSize: "14px" }}
+        style={{ fontSize: isMobile?"12px" : "14px"  }}
       >
         <div className="e-mail">
           <span>
@@ -99,7 +99,7 @@ export default function TopBar() {
       </div>
       <div className="social-media d-flex flex-column flex-sm-row gap-2 gap-sm-3 ">
         <div>
-          <span className="contents " style={{ fontSize: "14px" }}>
+          <span className="contents " style={{ fontSize: isMobile?"12px" : "14px" }}>
             Follow Us On :
           </span>
         </div>
@@ -112,20 +112,18 @@ export default function TopBar() {
             />
           </span>
           <span>
-            {" "}
             <img
               src={insta}
               alt="insta"
               style={{ width: isMobile ? "18px" : "100%" }}
-            />{" "}
+            />
           </span>
           <span>
-            {" "}
             <img
               src={youtube}
               alt="youtube"
               style={{ width: isMobile ? "18px" : "100%" }}
-            />{" "}
+            />
           </span>
         </div>
       </div>

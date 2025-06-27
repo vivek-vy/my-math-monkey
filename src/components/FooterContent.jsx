@@ -18,12 +18,12 @@ import { CommonButton } from "./CommonButton.jsx";
 
 export const FooterContent = () => {
   return (
-    <div className="" style={{ backgroundColor: COLORS.footerBg }}>
+    <div className="pb-3 pb-sm-0" style={{ backgroundColor: COLORS.footerBg }}>
       <div className="wave-img">
         <img className="w-100" src={waveimg} alt="wave" />
       </div>
 
-      <div className="d-flex px-4 px-sm-5  flex-column align-items-center flex-lg-row gap-5 gap-sm-0   justify-content-between ">
+      <div className="d-flex px-3 px-sm-5  flex-column align-items-center flex-lg-row gap-5 gap-sm-0   justify-content-between ">
         <div className="logo mx-sm-5 mt-sm-5 " style={{ width: "250px" }}>
           <span>
             <img
@@ -36,7 +36,7 @@ export const FooterContent = () => {
             Math Monkey conduct Play to Learn educational math program for
             children 4 to 12 years old.
           </p>
-          <CommonButton btnText={"Contact Us"}/>
+          <CommonButton btnText={"Contact Us"} />
         </div>
         <div
           className="d-flex flex-column w-100  row-gap-5"
@@ -54,14 +54,13 @@ export const FooterContent = () => {
               <img src={cloud} alt="cloud" />
             </div>
           </div>
-          <div className="d-flex flex-column flex-sm-row justify-content-around gap-5">
+          <div className="d-flex align-items-center flex-wrap flex-column flex-sm-row justify-content-around gap-5">
             <div className="quick-links d-flex flex-column gap-3">
               <div>
-                {" "}
-                <h4 className="footer-section-title">Quick Links</h4>{" "}
+                <h4 className="footer-section-title ">Quick Links</h4>{" "}
                 <hr className="w-25 opacity-100 m-0 my-2" />
               </div>
-              <div className="d-flex gap-5">
+              <div className="d-flex " style={{ gap: "5rem" }}>
                 <div className="d-flex flex-column ">
                   <NavLink>Home</NavLink>
                   <NavLink>About Us</NavLink>
@@ -71,7 +70,7 @@ export const FooterContent = () => {
                   <NavLink>Contact Us </NavLink>
                   <NavLink>Cookie Policy </NavLink>
                 </div>
-                <div className="d-flex flex-column">
+                <div className="d-flex  flex-column">
                   <NavLink>Special Events</NavLink>
                   <NavLink>Partnership</NavLink>
                   <NavLink>Career</NavLink>
@@ -133,18 +132,16 @@ export const FooterContent = () => {
           </div>
         </div>
       </div>
-      <div className=" d-flex flex-column flex-sm-row px-5 justify-content-between align-items-center align-items-sm-start ">
-        <div  style={{ marginTop: "-20px" }}>
+      <div className=" d-flex flex-column flex-sm-row px-sm-5   justify-content-between align-items-center align-items-sm-start ">
+        <div style={{ marginTop: "-20px" }}>
           <img src={lineStar} alt="star2" />
         </div>
-        <div
-          className="kid-block d-flex  justify-content-around "         
-        >
-          <div className="small-imgv" style={{ marginTop: "-30px" }} >
-            <img src={kid} alt="kid" />{" "}
+        <div className="kid-block d-flex  justify-content-around ">
+          <div className="small-imgv" style={{ marginTop: "-30px" }}>
+            <img src={kid} alt="kid" width={"100%"} />
           </div>
           <div className="social-icon">
-            <img src={whatsapp} alt="kid" />{" "}
+            <img src={whatsapp} alt="kid" width={"100%"} />
           </div>
         </div>
       </div>
