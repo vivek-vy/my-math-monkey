@@ -11,10 +11,10 @@ export const NavBar = () => {
   return (
     <Navbar
       expand="lg"
-      className="bg-white pb-3 px-3 py-sm-3 px-sm-5 w-100 fs-5 fw-medium"
+      className="bg-white px-2 py-0  px-sm-5 w-100  fw-medium"
     >
       <Navbar.Brand href="#home">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" style={{height:"105px",width:"160px"}} />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse

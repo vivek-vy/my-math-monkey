@@ -62,22 +62,22 @@ export const FooterContent = () => {
               </div>
               <div className="d-flex " style={{ gap: "5rem" }}>
                 <div className="d-flex flex-column ">
-                  <NavLink>Home</NavLink>
-                  <NavLink>About Us</NavLink>
-                  <NavLink>Center in Asia</NavLink>
-                  <NavLink>Read book</NavLink>
-                  <NavLink>Opportunities</NavLink>
-                  <NavLink>Contact Us </NavLink>
-                  <NavLink>Cookie Policy </NavLink>
+                  <NavLink className="my-navlink" >Home</NavLink>
+                  <NavLink className="my-navlink" >About Us</NavLink>
+                  <NavLink className="my-navlink" >Center in Asia</NavLink>
+                  <NavLink className="my-navlink" >Read book</NavLink>
+                  <NavLink className="my-navlink" >Opportunities</NavLink>
+                  <NavLink className="my-navlink" >Contact Us </NavLink>
+                  <NavLink className="my-navlink" >Cookie Policy </NavLink>
                 </div>
                 <div className="d-flex  flex-column">
-                  <NavLink>Special Events</NavLink>
-                  <NavLink>Partnership</NavLink>
-                  <NavLink>Career</NavLink>
-                  <NavLink>FAQ</NavLink>
-                  <NavLink>Privacy Policy </NavLink>
-                  <NavLink>Terms Of Use </NavLink>
-                  <NavLink>Sitemap </NavLink>
+                  <NavLink className="my-navlink" >Special Events</NavLink>
+                  <NavLink className="my-navlink" >Partnership</NavLink>
+                  <NavLink className="my-navlink" >Career</NavLink>
+                  <NavLink className="my-navlink" >FAQ</NavLink>
+                  <NavLink className="my-navlink" >Privacy Policy </NavLink>
+                  <NavLink className="my-navlink" >Terms Of Use </NavLink>
+                  <NavLink className="my-navlink" >Sitemap </NavLink>
                 </div>
               </div>
             </div>
@@ -88,12 +88,12 @@ export const FooterContent = () => {
               </div>
               <div className="d-flex">
                 <div className="d-flex flex-column">
-                  <NavLink>Virtual Class</NavLink>
-                  <NavLink>Play To Learn</NavLink>
-                  <NavLink>5 Brain Abilities</NavLink>
-                  <NavLink>Brainthink Learning</NavLink>
-                  <NavLink>Mathbrain</NavLink>
-                  <NavLink>Vedic Math </NavLink>
+                  <NavLink className="my-navlink" >Virtual Class</NavLink>
+                  <NavLink className="my-navlink" >Play To Learn</NavLink>
+                  <NavLink className="my-navlink" >5 Brain Abilities</NavLink>
+                  <NavLink className="my-navlink" >Brainthink Learning</NavLink>
+                  <NavLink className="my-navlink" >Mathbrain</NavLink>
+                  <NavLink className="my-navlink" >Vedic Math </NavLink>
                 </div>
               </div>
             </div>

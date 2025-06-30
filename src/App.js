@@ -5,6 +5,7 @@ import { RouterProvider } from "react-router-dom";
 import { myRouter } from "./router/router";
 import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ScrollToTopButton from "./components/small-components/ScrollToTop";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={myRouter}/>
+      <ScrollToTopButton />
     </div>
   );
 }

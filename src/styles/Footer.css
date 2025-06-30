@@ -49,3 +49,8 @@ div a {
     width:100%;
   }
 }
+
+
+.my-navlink:hover{
+color: #ff5b00;
+}

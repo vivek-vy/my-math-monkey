@@ -296,7 +296,7 @@ export default function HomePage() {
       {/* -------------------- adventure section  ---------------------- */}
       <section
         className="math-adventure position-relative "
-        style={{ padding: "7rem  2px" }}
+        style={{ padding: "3rem  2px" }}
       >
         <div className="mt-sm-5" style={{ marginBottom: "-150px" }}>
           <img src={vect1} alt="vector-img" />
@@ -383,7 +383,7 @@ export default function HomePage() {
         </div>
         <div
           className="position-absolute z-0 d-none d-sm-block"
-          style={{ bottom: "100px", right: "15%" }}
+          style={{ bottom: "50px", right: "15%" }}
         >
           <img src={bus} alt="" width={"100%"} />
         </div>

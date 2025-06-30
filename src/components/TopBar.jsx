@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import "../styles/topbar.css"
+
 import fb from "../assets/topbar_social-icons/facebook1.png";
 import insta from "../assets/topbar_social-icons/instagram1.png";
 import youtube from "../assets/topbar_social-icons/youtube1.png";
@@ -18,18 +20,19 @@ export default function TopBar() {
 
   return (
     <div
-      className="d-flex justify-content-between px-3  px-sm-5  py-2 py-sm-3"
+      className="d-flex justify-content-between px-3  px-sm-5"
       style={{
         backgroundColor: "#333333",
         color: "#FFFFFF",
         fontSize: isMobile ? "12px" : "18px",
+        padding:"10px"
       }}
     >
       <div
-        className="d-flex align-items-sm-center flex-column flex-sm-row gap-sm-4 text-sm"
+        className="d-flex align-items-sm-center flex-column flex-sm-row gap-sm-4 text-sm fw-semibold"
         style={{ fontSize: isMobile?"12px" : "14px"  }}
       >
-        <div className="e-mail">
+        <div className="e-mail text-hover">
           <span>
             <svg
               width={isMobile ? "15px" : "28"}
@@ -60,9 +63,9 @@ export default function TopBar() {
               </defs>
             </svg>
           </span>
-          <span className="ms-2">enquiry@mathmonkey.asia</span>
+          <span className="ms-2  fw-semibold">enquiry@mathmonkey.asia</span>
         </div>
-        <div className="contact" style={{ display: "block" }}>
+        <div className="contact text-hover" style={{ display: "block" }}>
           <span>
             <svg
               width={isMobile ? "15px" : "28"}
@@ -94,31 +97,31 @@ export default function TopBar() {
               </defs>
             </svg>
           </span>
-          <span className="ms-2">+1234567890</span>
+          <span className="ms-2 fw-semibold ">+1234567890</span>
         </div>
       </div>
       <div className="social-media d-flex flex-column flex-sm-row gap-2 gap-sm-3 ">
         <div>
-          <span className="contents " style={{ fontSize: isMobile?"12px" : "14px" }}>
+          <span className="contents text-hover fw-semibold" style={{ fontSize: isMobile?"12px" : "14px" }}>
             Follow Us On :
           </span>
         </div>
         <div className="social-icon d-flex gap-2 ">
-          <span>
+          <span className="social-icon-hover">
             <img
               src={fb}
               alt="fb"
               style={{ width: isMobile ? "18px" : "100%" }}
             />
           </span>
-          <span>
+          <span  className="social-icon-hover">
             <img
               src={insta}
               alt="insta"
               style={{ width: isMobile ? "18px" : "100%" }}
             />
           </span>
-          <span>
+          <span  className="social-icon-hover">
             <img
               src={youtube}
               alt="youtube"

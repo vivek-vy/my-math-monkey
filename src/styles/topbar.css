@@ -1,0 +1,13 @@
+
+
+.social-icon-hover{
+transition: all 0.3s ease-out;
+}
+
+.social-icon-hover:hover{
+
+}
+
+.text-hover:hover{
+    color: gainsboro !important;
+}
